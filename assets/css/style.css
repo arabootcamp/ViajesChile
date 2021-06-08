@@ -1,0 +1,30 @@
+:root{
+  --my-cyan: hsl(188, 78%, 41%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+}
+
+.my-size-img{
+width: 100vw;
+height: 50vw;
+}
+
+.my-bg-nav{
+background-color: var(--my-cyan);
+}
+
+
+
