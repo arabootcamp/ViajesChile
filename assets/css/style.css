@@ -15,6 +15,7 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   margin: 0;
+  padding: 0;
 }
 
 .my-size-img{
@@ -22,7 +23,11 @@ width: 100vw;
 height: 50vw;
 }
 
-.my-bg-nav{
+.my-bg-black{
+  background-color: #000;
+}
+
+.my-bg-nav, .my-bg-cyan{
 background-color: var(--my-cyan);
 }
 
