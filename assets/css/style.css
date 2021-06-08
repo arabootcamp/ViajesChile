@@ -1,4 +1,4 @@
-:root{
+:root {
   --my-cyan: hsl(188, 78%, 41%);
 }
 
@@ -6,6 +6,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  width: 100%;
 }
 
 *,
@@ -18,18 +19,26 @@ html {
   padding: 0;
 }
 
-.my-size-img{
-width: 100vw;
-height: 50vw;
-}
-
-.my-bg-black{
+body {
   background-color: #000;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
 }
 
-.my-bg-nav, .my-bg-cyan{
-background-color: var(--my-cyan);
+.my-size-img {
+  width: 100vw;
+  height: 50vw;
 }
 
+.my-size-logo {
+  width: 2rem;
+}
 
+.my-bg-nav,
+.my-bg-cyan {
+  background-color: var(--my-cyan);
+}
 
+.my-fw-500{
+  font-weight: 500;
+}

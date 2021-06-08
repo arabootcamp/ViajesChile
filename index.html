@@ -10,7 +10,7 @@
   <meta name="keywords" content="viajes, diversión, pasatiempo">
   <!--Favicon-->
   <link rel="shortcut icon" href="assets/img/viajes.svg" type="image/x-icon">
-  <!--Bootstrap-->
+  <!--Bootstrap 5.0.1-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <!--Fontawesome-->
@@ -30,10 +30,10 @@
   <!--Header-->
   <header>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top py-2">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top py-3">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/img/viajes.svg" width="8%" height="8%" alt="logo">
+          <img src="assets/img/viajes.svg" alt="logo" class="my-size-logo img-fluid">
           Viajes Chile</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,12 +95,13 @@
   </header>
 
   <!--Seccion Quiénes Somos-->
-  <section id="quienes-somos" class="d-none d-md-block my-bg-black text-white p-4">
+  <section id="quienes-somos" class="d-none d-md-block text-white p-4">
+    <div class="py-4"></div>
     <h3 class="text-center py-4 border-bottom border-2 border-info">¿Quiénes Somos?</h3>
     <div class="container-fluid py-5">
       <div class="row row-cols-1 row-cols-md-3">
         <div class="col">
-          <div class="bg-info py-1 text-center"><i class="fas fa-plane fa-2x text-white"></i></div>
+          <div class="bg-info py-1 text-center"><i class="fas fa-plane fa-2x"></i></div>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eos repudiandae, culpa sapiente
             temporibus facere eius et harum dolorum odio facilis eveniet ipsum eligendi animi at reiciendis dolore
             adipisci, enim laboriosam fugiat minima! Error non a doloremque saepe aspernatur quis necessitatibus,
@@ -115,10 +116,10 @@
             numquam odio, quae voluptatem beatae labore repellendus sint repellat dicta atque illum et reiciendis
             tempora ipsa alias eligendi vero adipisci? Officiis debitis expedita doloremque magni velit atque facere
             praesentium provident, cum incidunt! Voluptates dolorum suscipit ad necessitatibus.</p>
-          <div class="bg-info py-1 text-center"><i class="fas fa-triangle fa-2x text-white"></i></div>
+          <div class="bg-info py-1 text-center"><i class="fas fa-triangle fa-2x"></i></div>
         </div>
         <div class="col">
-          <div class="bg-info py-1 text-center"><i class="fas fa-route fa-2x text-white"></i></div>
+          <div class="bg-info py-1 text-center"><i class="fas fa-route fa-2x"></i></div>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eos repudiandae, culpa sapiente
             temporibus facere eius et harum dolorum odio facilis eveniet ipsum eligendi animi at reiciendis dolore
             adipisci, enim laboriosam fugiat minima! Error non a doloremque saepe aspernatur quis necessitatibus,
@@ -132,15 +133,16 @@
   <!--Fin Sección Quienes Somos-->
 
   <!--Sección Destacados-->
-  <section id="destacados" class="my-bg-black text-white p-4">
-    <h3 class="text-center pb-3 border-bottom border-2 border-info">Destacados</h3>
+  <section id="destacados" class="text-white p-4">
+    <div class="py-4"></div>
+    <h3 class="text-center py-4 border-bottom border-2 border-info">Destacados</h3>
     <div class="container-fluid">
       <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
         <div class="col pt-3">
           <div class="card h-100">
             <img src="assets/img/card1.jpg" class="card-img-top" alt="imagen de lago">
             <div class="card-body pb-5 my-bg-cyan">
-              <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+              <h4 class="card-title my-fw-500">Lorem ipsum dolor sit amet</h4>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
             </div>
@@ -150,7 +152,7 @@
           <div class="card h-100">
             <img src="assets/img/card2.jpg" class="card-img-top" alt="imagen de lago">
             <div class="card-body pb-5 my-bg-cyan">
-              <h5 class="card-title">Consectetur adipiscing elit</h5>
+              <h4 class="card-title my-fw-500">Consectetur adipiscing elit</h4>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
             </div>
@@ -160,7 +162,7 @@
           <div class="card h-100">
             <img src="assets/img/card3.jpg" class="card-img-top" alt="imagen de lugar seco con charco de agua">
             <div class="card-body pb-5 my-bg-cyan">
-              <h5 class="card-title">Sed do eiusmod tempor incididunt ut labore</h5>
+              <h4 class="card-title my-fw-500">Sed do eiusmod tempor incididunt ut labore</h4>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
             </div>
@@ -170,7 +172,7 @@
           <div class="card h-100">
             <img src="assets/img/card4.jpg" class="card-img-top" alt="imagen de bosque">
             <div class="card-body pb-5 my-bg-cyan">
-              <h5 class="card-title">Ut enim ad minima veniam</h5>
+              <h4 class="card-title my-fw-500">Ut enim ad minima veniam</h4>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
             </div>
@@ -182,16 +184,61 @@
   <!--Fin Sección Detacados-->
 
   <!--Sección Contacto-->
+  <section id="contacto" class="text-white p-4">
+    <div class="py-4"></div>
+    <h3 class="text-center py-4 border-bottom border-2 border-info">Contacto</h3>
+    <div class="container my-5">
+      <div class="typeform-widget" data-url="https://form.typeform.com/to/t24jTi2f?typeform-medium=embed-snippet"
+        style="width: 100%; height: 500px;"></div>
+      <script>
+        (function () {
+          var qs, js, q, s, d = document,
+            gi = d.getElementById,
+            ce = d.createElement,
+            gt = d.getElementsByTagName,
+            id = "typef_orm",
+            b = "https://embed.typeform.com/";
+          if (!gi.call(d, id)) {
+            js = ce.call(d, "script");
+            js.id = id;
+            js.src = b + "embed.js";
+            q = gt.call(d, "script")[0];
+            q.parentNode.insertBefore(js, q)
+          }
+        })()
+      </script>
+    </div>
+  </section>
   <!--Fin Sección Contacto-->
 
   <!--Footer-->
+  <footer class="my-bg-cyan text-white px-4 py-3">
+    <div class="container px-sm-5 d-sm-flex justify-content-between">
+      <h4 class="text-center fw-bold">VIAJES CHILE</h4>
+      <div class="mt-3 mt-sm-0 text-center">
+        <a class="text-decoration-none text-white" href="https://www.github.com" target="_blank">
+          <i class="fab fa-github-square fa-2x" data-bs-toggle="tooltip" data-bs-placement="left" title="GitHub"></i>
+        </a>
+        <a class="text-decoration-none text-white" href="https://www.linkedin.com" target="_blank">
+          <i class="fab fa-linkedin fa-2x ms-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin"></i>
+        </a>
+        <a class="text-decoration-none text-white" href="https://www.twitter.com" target="_blank">
+          <i class="fab fa-twitter-square fa-2x ms-3" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Twitter"></i>
+        </a>
+        <a class="text-decoration-none text-white" href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-square fa-2x ms-3" data-bs-toggle="tooltip" data-bs-placement="right"
+            title="Facebook"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
-
-  <!--Bootstrap  popper-->
+  <!--Bootstrap 5.0.1  popper-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
   </script>
-  <!--Boostrap js-->
+  <!--Bootstrap 5.0.1 js-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
     integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
   </script>
