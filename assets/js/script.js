@@ -1,23 +1,29 @@
 $(document).ready(function () {
 
-     // Añade smooth scrolling a todos los links
-     $("a").on('click', function (event) {
-          if (this.hash !== "") {
-               event.preventDefault();
-               var hash = this.hash;
-               $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-               }, 800, function () {
-                    window.location.hash = hash;
-               });
-          } // End if
+     // Añade smooth scrolling a a los link del navbar
+     $(".smooth-scroll").on("click", function (event) {
+          event.preventDefault();
+          let hash = this.hash;
+          console.log(hash);
+          $("html, body").animate({
+               scrollTop: $(hash).offset().top - 37,
+          }, 800);
      });
 
-     //Evento para hacer aparecer el bg-color cyan del navbar
+     //Evento para hacer aparecer el bg-color del navbar cyan 
      $(document).on("scroll", function () {
-          let altoImagenHeaader = $(window).width() * 0.46;
-          let desplazamientoActual = $(document).scrollTop();
-          if (desplazamientoActual > altoImagenHeaader)
+
+          let widthDevice = $(window).width();
+
+          if (widthDevice < 520)
+               widthDevice *= 0.35;
+          else if (widthDevice < 992)
+               widthDevice *= 0.42;
+          else
+               widthDevice *= 0.44;
+
+          let currentOffset = $(document).scrollTop();
+          if (currentOffset > widthDevice)
                $('nav').addClass('my-bg-nav');
           else
                $('nav').removeClass('my-bg-nav');
